@@ -1,0 +1,15 @@
+openapi: 3.0.1
+info:
+  title: User Auth Service
+  description: |-
+    Authentication & User Management Foundation
+    - **Key relationships**:
+      - All 6 code services require auth tokens from this service
+      - If this service is down, entire system is unavailable
+      - Changes to User entity affect all downstream services
+  x-cortex-git:
+    github:
+      alias: cortex
+      repository: CSUCortex/user-auth-service
+  x-cortex-tag: csucortex-user-auth-service
+  x-cortex-type: service
